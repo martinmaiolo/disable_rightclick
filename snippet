@@ -1,0 +1,9 @@
+function disable_rightclick() {
+?>
+jQuery(document).ready(function(){     jQuery(document).bind("contextmenu",function(e){         
+return false;     
+}); 
+}); 
+<?php
+}
+add_action('wp_footer', 'disable_rightclick');
